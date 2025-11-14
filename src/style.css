@@ -1,0 +1,41 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  padding: 0;
+  color: #111;
+}
+
+.app header {
+  padding: 12px 16px;
+  background: #0b5fff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.app header h1 { margin: 0 0 8px 0; font-size: 20px; }
+.controls { display: flex; gap: 8px; align-items: center; }
+.controls button { padding: 6px 10px; border: none; border-radius: 6px; cursor: pointer; }
+.controls button.active { background: #fff8; }
+.status.ok { margin-left: 12px; color: #b8ffd8; }
+.status.warn { margin-left: 12px; color: #ffebc4; }
+
+.app main { padding: 16px; display: flex; justify-content: center; }
+.left, .right { padding: 8px; }
+.video { width: 640px; max-width: 80vw; background: #000; }
+.overlay { position: relative; margin-top: -100%; pointer-events: none; }
+
+.register, .recognize { display: flex; gap: 16px; }
+.right { width: 360px; max-width: 35vw; overflow-y: auto; }
+
+.person { display: flex; gap: 8px; margin: 8px 0; align-items: center; }
+.person img { width: 56px; height: 56px; object-fit: cover; border-radius: 6px; background: #ddd; }
+.pname { font-weight: 600; }
+.pmeta { font-size: 12px; color: #666; }
+
+.controls button { margin-top: 8px; }
+.message { margin-top: 8px; background: #fff8; padding: 6px; border-radius: 6px; }
+
+.banner { padding: 8px; background: #fffae6; border: 1px solid #ffebc4; border-radius: 6px; }
+
+footer { padding: 8px 16px; font-size: 12px; color: #666; }
